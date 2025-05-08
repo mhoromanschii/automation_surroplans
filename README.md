@@ -5,9 +5,36 @@ The goal is to ensure reliable end-to-end testing of dynamic form interactions, 
 Special attention is given to precise element targeting using optimized XPath selectors and simulating user actions
 
 
+# FIRST TIME STEPS to Setup Nightwatch
+```
+- Pull reposirory
+ 
+ git clone https://github.com/mhoromanschii/automation_surroplans.git
+
+ In an existing project: cd <automation_surroplans> 
+ 
+ npm install
+ 
+ npm install -g npm-check-updates
+ 
+ npm install nightwatch --save
+ 
+ npm audit fix --force
+ 
+
+
+ ```
+ 
 #### Running tests
+
+These tests will run using the chrome browser by default
+
 To run the test, use the usual npx nightwatch command like below:
 
 cd /path/to/project/directory
 
+command to run test suite:
+
 npx nightwatch
+
+
